@@ -3,9 +3,7 @@
 def call() {
 
     pipeline {
-        agent {
-            label 'master'
-        }
+        agent any
 
         stages {
             stage("test") {
