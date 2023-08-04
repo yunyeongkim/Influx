@@ -14,6 +14,14 @@ def call() {
                     }
                 }
             }
+            stage("test12") {
+                steps {
+                    script {
+
+                        echo "Starts"
+                    }
+                }
+            }
         }
     }
 }
