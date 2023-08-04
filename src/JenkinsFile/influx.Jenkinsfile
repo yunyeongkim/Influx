@@ -1,3 +1,3 @@
-@Library('mobis-ci-framework@master') _
+@Library('influx@influx') _
 
 execInfluxDB()
