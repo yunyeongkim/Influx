@@ -15,10 +15,6 @@ def call() {
             }
         }
 
-        post {
-            always{
-                influxDbPublisher(selectedTarget:'Influx-docker')
-            }
-        }
+
     }
 }
