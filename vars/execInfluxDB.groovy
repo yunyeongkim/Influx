@@ -9,10 +9,15 @@ def call() {
             stage("test") {
                 steps {
                     script {
-
                         echo "Starts"
                     }
                 }
+            }
+        }
+
+        post {
+            always{
+                influxDbPublisher()
             }
         }
     }
