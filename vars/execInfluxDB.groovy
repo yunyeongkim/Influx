@@ -17,11 +17,7 @@ def call() {
 
         post {
             always{
-                step([$class: 'InfluxDbPublisher',
-                      customData: null,
-                      customDataMap: null,
-                      customPrefix: null,
-                      target: 'influx-docker'])
+                influxDbPublisher(selectedTarget:'Influx-docker')
             }
         }
     }
