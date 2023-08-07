@@ -17,7 +17,7 @@ def call() {
 
         post {
             always{
-                influxDbPublisher()
+                influxDbPublisher(selectedTarget:'InfluxPlugin')
             }
         }
     }
